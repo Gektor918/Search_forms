@@ -36,7 +36,6 @@ def get_form():
             return {'search_form_result':search_form_result[0]['form_name']}, 200
         else:
             search_form_result = str((FormData.__annotations__))
-            print(search_form_result)
             return {'search_form_result':search_form_result}, 400
     else:
         search_form_result = need_views(result_validate)
